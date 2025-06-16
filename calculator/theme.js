@@ -229,7 +229,7 @@ function setExistThemeMessage(name){
 
 function disableCurrentTheme(){
   const body        = document.querySelector('.js-calculator-container');
-  const htmlBody  = document.body;
+  const htmlBody    = document.body;
   const str         = (themes[currentTheme]).toLowerCase().split(' ');
   const targetTheme = Array.from(str).join('-')+"-theme";
   
@@ -259,16 +259,16 @@ function randomPickImage(){
 
   if(imageId === undefined){
     imageId = id;
-    result = id;
-  } else if(imageId !== id) {
+    result  = id;
+  } else if (imageId !== id) {
     imageId = id;
-    result = id;
+    result  = id;
   } else if (imageId === id){
     if(id < 5){
-      result = id + 1;
+      result  = id + 1;
       imageId = id + 1;
     } else if (id === 5){
-      result = 1;
+      result  = 1;
       imageId = 1;
     }
   }
